@@ -1,0 +1,41 @@
+
+
+MP1 Klasy, Atrybuty
+    /done Ekstencja
+    /done Ekstensja - trwałość
+    /done Atr. złożony (klasa: Address)
+    /done Atr. opcjonalny {klasa: Address)
+    /done Atr. powtarzalny
+    /done Atr. klasowy (klasa: Person)
+    /done: Atr. pochodny (klasa: Discount -> Voucher + Giftcard)
+    /done Met. klasowa (klasa: MenuItem - findItemsBelowPrice)
+    /done Przesłonięcie + przeciążenie
+
+MP2 Asocjacje
+    /done Zwykła -> MenuCategory + MenuItem
+    /done Z atrybutem -> Restaurant + Contract + Employee
+    /done Kwalifikowana -> Restaurant + MenuCategory
+    /done Kompozycja -> Client + Review
+
+MP3 Dziedziczenie
+    /done Klasa abstrakcyjna + polimorfizm (getTotalDiscountAmount dla Discount etc.)
+    /done Wieloaspektowe
+        done AircraftType + Passenger + Cargo + RouteType + Intercontinental + Domestic
+    /done Overlapping -> Restaurant + RestaurantClass
+    /done Wielodziedziczenie -> Discount + Voucher + VoucherGiftcard + Giftcard + IGiftcard
+    /done Dynamic -> MenuItem + MenuItemSeasonal + MenuItemFixed + (interfaces)
+
+MP4 Ograniczenia
+    /done Atrybutu
+        done Statyczne -> isValid dla PESEL i @email (klasa: Employee)
+        done Dynamiczne -> nameSurnameMinMaxLength (klasa: Person)
+    /done Unique -> setPesel -> isPeselUnique (klasa: Employee)
+    /done Subset -> Client has Discounts and usedDiscounts
+    /done Ordered -> MenuItems by name
+    /done Bag -> addEmployee, addRestaurant (klasa: Employee, Restaurant, Contract)
+    /done Własne -> klasa:Employee -> setPesel().validatePesel() ; klasa: Client -> isValid() ; klasa: MenuItemFixed -> setFirstDebut
+
+Czego na próżno szukać ?
+    MP3 -> Dziedziczenie Wieloaspektowe
+    MP4 -> Ograniczenie XOR
+    MP5 -> wszystko
